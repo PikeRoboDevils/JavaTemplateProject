@@ -13,6 +13,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - run: chmod +x ./gradlew
+
       - name: Compile and run tests on robot code
         run: ./gradlew build
   check-style:
@@ -24,6 +26,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+
+      - run: chmod +x ./gradlew
 
       - name: Use spotless to check code style
         run: ./gradlew spotlessCheck

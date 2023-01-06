@@ -1,4 +1,4 @@
-/* (C) 2022 Pike RoboDevils, FRC Team 1018 */
+/* (C) 2023 Pike RoboDevils, FRC Team 1018 */
 package org.pikerobodevils.frc;
 
 import edu.wpi.first.wpilibj.RobotBase;
@@ -9,14 +9,14 @@ import edu.wpi.first.wpilibj.RobotBase;
  * call.
  */
 public final class Main {
-    private Main() {}
+  private Main() {}
 
-    /**
-     * Main initialization function. Do not perform any initialization here.
-     *
-     * <p>If you change your main robot class, change the parameter type.
-     */
-    public static void main(String... args) {
-        RobotBase.startRobot(Robot::new);
-    }
+  /**
+   * Main initialization function. Do not perform any initialization here.
+   *
+   * <p>If you change your main robot class, change the parameter type.
+   */
+  public static void main(String... args) {
+    RobotBase.startRobot(Robot::new);
+  }
 }

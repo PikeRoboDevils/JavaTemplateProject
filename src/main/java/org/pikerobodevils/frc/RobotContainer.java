@@ -1,8 +1,13 @@
-/* (C) 2023 Pike RoboDevils, FRC Team 1018 */
+/* Copyright 2023 Pike RoboDevils, FRC Team 1018
+ * Use of this source code is governed by an MIT-style
+ * license that can be found in the LICENSE.md file or
+ * at https://opensource.org/licenses/MIT. */
+
 package org.pikerobodevils.frc;
 
+import static edu.wpi.first.wpilibj2.command.Commands.print;
+
 import edu.wpi.first.wpilibj2.command.Command;
-import edu.wpi.first.wpilibj2.command.Commands;
 
 public class RobotContainer {
   public RobotContainer() {
@@ -12,6 +17,6 @@ public class RobotContainer {
   private void configureBindings() {}
 
   public Command getAutonomousCommand() {
-    return Commands.print("No autonomous command configured");
+    return print("No autonomous command configured");
   }
 }

@@ -1,4 +1,8 @@
-/* (C) 2023 Pike RoboDevils, FRC Team 1018 */
+/* Copyright 2023 Pike RoboDevils, FRC Team 1018
+ * Use of this source code is governed by an MIT-style
+ * license that can be found in the LICENSE.md file or
+ * at https://opensource.org/licenses/MIT. */
+
 package org.pikerobodevils.frc;
 
 import edu.wpi.first.wpilibj.TimedRobot;
@@ -27,9 +31,6 @@ public class Robot extends TimedRobot {
   public void disabledPeriodic() {}
 
   @Override
-  public void disabledExit() {}
-
-  @Override
   public void autonomousInit() {
     m_autonomousCommand = m_robotContainer.getAutonomousCommand();
 
@@ -42,9 +43,6 @@ public class Robot extends TimedRobot {
   public void autonomousPeriodic() {}
 
   @Override
-  public void autonomousExit() {}
-
-  @Override
   public void teleopInit() {
     if (m_autonomousCommand != null) {
       m_autonomousCommand.cancel();
@@ -55,9 +53,6 @@ public class Robot extends TimedRobot {
   public void teleopPeriodic() {}
 
   @Override
-  public void teleopExit() {}
-
-  @Override
   public void testInit() {
     CommandScheduler.getInstance().cancelAll();
   }
@@ -66,5 +61,8 @@ public class Robot extends TimedRobot {
   public void testPeriodic() {}
 
   @Override
-  public void testExit() {}
+  public void simulationInit() {}
+
+  @Override
+  public void simulationPeriodic() {}
 }
